@@ -6,10 +6,7 @@ body {
   padding: 0px;
   font-family: 'Cormorant Infant', serif;
   font-size: 13px;
-  background: #F7E5DB;    
-}
-.button {
-   border: none; outline: none; 
+  background: #F7E5DB;      
 }
 header {
   height: 85px;
@@ -260,18 +257,18 @@ ul, li {
 }
 .cards {  
   width: 1170px;  
-  margin: 50px 23px 0 23px;
+  /* margin: 50px 23px 0 23px; */
   height: 381px;  
   display: flex;
   min-width: 0;  
 }
 .cards1 {
-  width: 270px;
+  width: 270px !important;
   height: 381px;
   position: relative;
   /* border: solid 1px black; */
   display: flex;  
-  margin-right: 30px;
+  /* margin-right: 30px; */
   background: #F7E5DB;
   box-shadow: 0px 4px 30px rgba(101, 11, 11, 0.1);
   min-width: 0;
@@ -280,20 +277,22 @@ ul, li {
   border: solid 1px #650B0B;
 }
 .tional {
-  display: block;
+  display: block;  
 }
 .card-title {  
   display: flex;
   margin-top: 1px;
   margin-left: 158px;
   align-items: center;
+  min-width: 0;
 }
 .card-title1 {  
   text-decoration: none;
   font-size: 12px;
   line-height: 15px;
   color: #C6314C;
-  display: flex;    
+  display: flex;   
+  min-width: 0; 
 }
 .strel {
   width: 10px;
@@ -332,6 +331,7 @@ ul, li {
 }
 .price1 {
   display: flex;
+  min-width: 0;
 }
 .price {
   margin-top: 21px;
@@ -345,6 +345,7 @@ ul, li {
   display: flex; 
   margin-left: 22px;
   margin-top: 21px;
+  min-width: 0;
 }
 .volume2 {  
   width: 44px;
@@ -361,7 +362,8 @@ ul, li {
   display: flex;
   font-weight: normal;
   font-size: 13px;
-  line-height: 16px;   
+  line-height: 16px;
+  min-width: 0;   
 }
 .menu4 button {
   margin-right: 7px;
@@ -455,9 +457,13 @@ ul, li {
   align-items: center;
 }
 .slider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 1170px;
   display: block;
   align-items: center;
   justify-content: center;
+  height: 381px;  
   min-width: 0;
 }
 .strelochka {
@@ -492,7 +498,7 @@ ul, li {
   top: -1.5px;
 }
 .cards2 {
-  width: 270px;
+  width: 270px !important;
   height: 381px;
   position: relative;
   /* border: solid 1px black; */
@@ -629,6 +635,7 @@ ul, li {
   margin: 30px auto 0 auto;
   height: 381px;  
   display: flex;
+  min-width: 0;
 }
 .description7 {
   position: absolute;
@@ -875,6 +882,7 @@ footer {
   margin-top: 75px;
 }
 .volume2-pressed {
+  background: #F7E5DB;
   color: #650B0B;
   border: 1px solid #650B0B;
   transition: color 0s;
@@ -964,7 +972,6 @@ footer {
   transition-duration: .25s;
   z-index: 1;
 }
-
 .menu__item {
   display: block;
   padding: 12px 24px;
@@ -983,90 +990,33 @@ footer {
 .menu__item:hover {
   background-color: #CFD8DC;
 }
+
 .menu__btn {
 }
 .hamburger-menu {
   display: none;
 }
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
-.slick-list {
-  overflow: hidden;
-}
-/* Лента слайдов */
-.slick-track{
+.slider5 {
   display: flex;
+  min-width: 0;
+  margin: 30px auto 0 50px;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
-/* Конкретный слайдер */
-.cards {
-  position: relative;
-  padding: 0px 50px;
+.swiper-scrollbar {
+  z-index: 5;  
+  /* position: static !important;   */
+  /* margin-top: 100px; */
 }
-.slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 3;
-  font-size: 0;
-  width: 30px;
-  height: 60px;
-  border: none;
+.class {
+  width: 100%;
+  height: 381px;
+  min-width: 0;  
 }
-.slider .slick-arrow.slick-prev{
-  left: 0;
-  background: url('../img/strelochkaleft.png') 0 0 / 100% no-repeat;
-  
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #C6314C;
 }
-.slider .slick-arrow.slick-next{
-  right: 0;
-  background: url('../img/strelochkaright.png') 0 0 / 100% no-repeat;
-}
-.cards .slick-dots{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cards .slick-dots li{
-  list-style: none;
-  margin: 0px 10px;
-}
-.cards .slick-dots button {
-  font-size: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-}
-.slider__item {}
+
+
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
   body {

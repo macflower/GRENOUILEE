@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box;  
 }
-html, body{
-  overflow-x:hidden;  
-}
 body {
   margin: 0px;
   padding: 0px;
@@ -1391,7 +1388,7 @@ footer {
   html, body{
     position: relative;
     /* width: 768px; */
-    overflow-x:hidden;  
+    /* overflow-x:hidden;   */
   }
   .obertka {
     /* margin-left: 15px; */
@@ -1492,6 +1489,7 @@ footer {
   .offer {
     margin-top: 53px;
     margin-left: 25px;
+    margin-bottom: 34px;
     display: block;
     height: 551px;
   }
@@ -1579,5 +1577,18 @@ footer {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
+  }
+  .assort {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.055em;
+    width: 238px;
+  }
+  .assort1 {
+    text-align: center;
+    margin-left: 0;
+    width: 320px;    
+    margin-bottom: 9px;
   }
 }

@@ -5,7 +5,7 @@
 // });
 
 // Инициализируем Swiper
-new Swiper('.image-slider', {
+var swiper1 = new Swiper('.swiper1', {
   // Стрелки
   navigation: {
     nextEl: '.swiper-button-next',
@@ -35,10 +35,97 @@ new Swiper('.image-slider', {
     // Чувствительность колеса мыши
     sensitivity: 1,
   },  
-
-  // Автовысота
+  
+  //Автопрокрутка
+  // autoplay: {
+  //   // Пауза между прокруткой
+  //   delay: 1000,
+  //   // Закончить на последнем слайде
+  //   stopOnLastSlide: true,
+  //   // Отключить после ручного переключения
+  //   disableOnInteraction: true
+  // },
+   
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,     
+    },
+    320: {
+      slidesPerView: 1,     
+    },
+  },
+  
+    // Автовысота
   // autoHeight: true,
 
+  // Бесконечный слайдер
+  // loop: true,
+
+  
+});
+
+// Инициализируем Swiper
+var newSwiper = new Swiper('.swiper2', {  
+
+  // Курсор перетаскивания
+  grabCursor: true,
+  
+  // Количество слайдов для показа
+  slidesPerView: 2,
+
+  // centeredSlides: true,
+ 
+
+  // loopedSlides: 2,
+
+  // slideDuplicateNextClass: 	'swiper-slide-duplicate-next',
+
+  // slideNextClass: 'swiper-slide-next',
+
+  // watchSlidesProgress: true,
+
+  // watchSlidesVisibility: false,
+
+  // watchOverflow: true,
+
+  // slidesPerGroup: 2,
+
+  // slidesPerColumn: 2,
+
+  // slidesPerColumnFill:"row",
+
+  // spaceBetween: 30,
+
+  // Отступ между слайдами
+  spaceBetween: 30,
+
+  // Свободный режим
+  freeMode: true,
+
+  // Управление колесом мыши
+  mousewheel: {
+    // Чувствительность колеса мыши
+    sensitivity: 1,
+  },
+  
+  // Скролл
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    // Возможность перетаскивать скролл
+    draggable: true,
+  },
+
+  // Вертикальный слайдер
+  direction: 'vertical',
+
+  // watchSlidesVisibility: true,
+  // Автовысота
+  // autoHeight: true,  
+
+  // slidesPerColumn: 1,
+
+  
   // Бесконечный слайдер
   // loop: true,
 
